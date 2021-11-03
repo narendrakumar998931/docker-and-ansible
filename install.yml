@@ -7,3 +7,7 @@
     package:
       name: httpd
       state: latest
+  - name: start the service
+    service:
+      name: httpd
+      state: started
