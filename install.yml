@@ -1,0 +1,10 @@
+---
+- name: install httpd package
+  hosts: all
+  become: true
+  gather_facts: yes
+  tasks:
+    - name: install package
+      package:
+        name: httpd
+        state: present
