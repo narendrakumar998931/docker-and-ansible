@@ -1,10 +1,19 @@
 ---
 - name: install httpd package
-  hosts: all
+  hosts: web
   become: true
-  gather_facts: yes
   tasks:
     - name: install package
       package:
         name: httpd
         state: latest
+
+    - name: copy the fiel
+      copy:
+        src: index.html
+        dest: /var/www/html/
+
+    - name: start the service
+      service:
+        name: https
+        state: started
