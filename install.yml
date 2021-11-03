@@ -15,5 +15,5 @@
 
     - name: start the service
       service:
-        name: https
+        name: httpd
         state: started
