@@ -3,3 +3,5 @@ this is we excut the ansible and dockerfiles
 docker and ansible are present in jenkins system
 
 in invock ansible playbook -- user the id-rsa  - for  jenkins system
+ansible configuration in jenkins  -- home dir -- /usr/bin/
+docker must add usergroup -- sudo usermod -aG docker ec2-user
